@@ -1,6 +1,10 @@
-# welvox-subtitle-shorts-editor
+# Welvox-subtitle-shorts-editor
 
 **Turn long videos into ranked, captioned vertical shorts. Locally, with Python and ffmpeg.**
+
+<p align="center">
+  <img src="assets/edit.png" 
+    </p>
 
 An agent skill for Claude Code, Codex and other `SKILL.md`-compatible agents. Give it a transcript (and optionally the video) and it finds the strongest 20 to 45 second moments, cuts them on sentence boundaries, crops to 9:16 and burns in word-by-word highlighted captions.
 
