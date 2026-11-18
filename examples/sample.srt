@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:04,000
+Why do 90% of AI agents fail in production?
+
+2
+00:00:04,000 --> 00:00:09,000
+Nobody talks about the real reason, and it is not the model.
+
+3
+00:00:09,000 --> 00:00:15,000
+It is the missing evaluation loop that catches broken tool calls early.
+
+4
+00:00:15,000 --> 00:00:21,000
+Teams ship an agent, watch it for a day, and assume that it works.
+
+5
+00:00:21,000 --> 00:00:27,000
+Instead, write ten test prompts and run them on every single change.
+
+6
+00:00:27,000 --> 00:00:33,000
+That one habit cuts silent failures by more than half in my own projects.
+
+7
+00:00:33,000 --> 00:00:38,000
+So the lesson is simple. Test the agent the way you test code.
+
+8
+00:00:38,000 --> 00:00:44,000
+um so yeah and like basically we also had a call about the schedule
+
+9
+00:00:44,000 --> 00:00:50,000
+and um you know the weather was kind of nice that day anyway
+
+10
+00:00:50,000 --> 00:00:54,000
+How do you test an agent in under five minutes?
+
+11
+00:00:54,000 --> 00:01:00,000
+Start with three prompts: one easy, one tricky and one that should be refused.
+
+12
+00:01:00,000 --> 00:01:07,000
+Run them after each change and compare the outputs side by side.
+
+13
+00:01:07,000 --> 00:01:13,000
+You will catch regressions in seconds instead of days.
+
+14
+00:01:13,000 --> 00:01:19,000
+Save the best outputs as your baseline and keep them in git.
